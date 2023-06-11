@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ToastProvider } from './Toast';
+import { ToastProvider as ToastProvider2 } from './Toast2';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +11,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ToastProvider>
-      <App />
+      <ToastProvider2>
+        <App />
+      </ToastProvider2>
     </ToastProvider>
   </React.StrictMode>
 );
