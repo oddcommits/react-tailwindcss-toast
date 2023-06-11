@@ -84,7 +84,7 @@ const Toast = ({ type, content, duration }) => {
 
   return (
     <div
-      className={`flex items-center font-medium justify-between rounded-xl px-6 py-4 shadow-lg bg-black font-bold w-fit ml-auto transition-opacity duration-1000 ease-in ${opacity}`}
+      className={`flex items-center justify-between rounded-xl px-6 py-4 shadow-lg bg-black font-bold w-fit ml-auto transition-opacity duration-1000 ease-in ${opacity}`}
     >
       {toastTypeToIcon(type)}
       <span className="ml-3 text-white">{content}</span>
